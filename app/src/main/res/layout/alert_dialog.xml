@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/selecter_press"
+            android:text="拍照"
+            android:textColor="@color/Ocean"
+            android:textSize="@dimen/text_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="34px"
+            android:layout_marginRight="34px"
+            android:background="@color/Smokey" />
+
+        <Button
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/selecter_press"
+            android:text="从相册选择"
+            android:textColor="@color/Ocean"
+            android:textSize="@dimen/text_title" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/selecter_press"
+            android:text="取消"
+            android:textColor="@color/Ocean"
+            android:textSize="@dimen/text_title"
+
+
+            />
+    </LinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

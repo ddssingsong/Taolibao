@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="108px"
+        android:background="@color/Background">
+
+        <EditText
+            android:id="@+id/et_fund_search"
+            android:layout_width="match_parent"
+            android:layout_height="68px"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@drawable/shape_gray_edit"
+            android:drawableLeft="@drawable/btn_nav_search"
+            android:drawablePadding="20px"
+            android:hint="请输入搜索条件"
+            android:imeActionLabel="搜索"
+            android:imeOptions="actionSearch"
+            android:padding="10px"
+            android:singleLine="true"
+            android:textColorHint="@color/Smokey"
+            android:textSize="28px" />
+
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/btn_clear_input"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Alabaster"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/Red"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/Red"
+        app:tabTextAppearance="@style/MyCustomTabTextAppearance1"
+        app:tabTextColor="@color/Black" />
+
+    <FrameLayout
+        android:id="@+id/content_fenji"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

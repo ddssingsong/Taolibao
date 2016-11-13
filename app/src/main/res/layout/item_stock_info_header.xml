@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:background="@color/White"
+    android:gravity="center_vertical">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="名称"
+        android:textSize="24px"
+        android:textColor="@color/Velvet"
+        android:layout_weight="1"
+        android:layout_marginLeft="30px"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="盈亏"
+        android:textSize="24px"
+        android:textColor="@color/Velvet"
+        android:layout_weight="1"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="持仓/可用"
+        android:textSize="24px"
+        android:textColor="@color/Velvet"
+        android:layout_weight="1"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="成本/现价"
+        android:textSize="24px"
+        android:textColor="@color/Velvet"
+        android:layout_weight="1"
+        android:layout_marginRight="30px"
+        android:gravity="right" />
+
+</LinearLayout>

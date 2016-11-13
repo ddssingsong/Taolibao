@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_stock_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/Red"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/Red"
+        app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+        app:tabTextColor="@color/Black" /> />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+
+        <RelativeLayout
+            android:id="@+id/layout_jiankuang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Smokey" />
+
+            <LinearLayout
+                android:id="@+id/layout_jian_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="40px"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公司介绍:"
+                    android:textColor="@color/Gunpowder" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上市日期:" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所属行业:" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发行价格:" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发行数量:" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所属地区:" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主营业务:" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40px"
+                android:layout_toRightOf="@id/layout_jian_left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_jian1"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_jian2"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_jian3"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_jian4"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_jian5"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_jian6"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_jian7"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_caiwu"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Smokey" />
+
+            <TextView
+                android:id="@+id/label_lirunbiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30px"
+                android:paddingLeft="30px"
+                android:paddingTop="30px"
+                android:text="利润表"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/text_content_sec"
+                android:textStyle="bold"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/label_lirunbiao"
+                android:background="@color/Smokey" />
+
+            <LinearLayout
+                android:id="@+id/layout_lirun_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_lirunbiao"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每股收益" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="营业收入" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="营业利润" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="净利润" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:layout_below="@id/label_lirunbiao"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_lirun1"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_lirun2"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_lirun3"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_lirun4"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/label_fuzaibiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_lirun_left"
+                android:paddingBottom="30px"
+                android:paddingLeft="30px"
+                android:paddingTop="30px"
+                android:text="负债表"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/text_content_sec"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@id/label_fuzaibiao"
+                android:background="@color/Smokey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/label_fuzaibiao"
+                android:background="@color/Smokey" />
+
+            <LinearLayout
+                android:id="@+id/layout_fuzai_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_fuzaibiao"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="流动资产" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总资产" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="流动负债" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负债合计" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="股东权益" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/label_fuzaibiao"
+                android:layout_marginRight="30px"
+                android:gravity="right"
+                android:layout_marginTop="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_fuzai1"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_fuzai2"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_fuzai3"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_fuzai4"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_fuzai5"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/label_xianjinbiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_fuzai_left"
+                android:paddingBottom="30px"
+                android:paddingLeft="30px"
+                android:paddingTop="30px"
+                android:text="现金表"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/text_content_sec"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@id/label_xianjinbiao"
+                android:background="@color/Smokey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/label_xianjinbiao"
+                android:background="@color/Smokey" />
+
+            <LinearLayout
+                android:id="@+id/layout_xianjin_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_xianjinbiao"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="经营现金流净额" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资现金流净额" />
+
+                <TextView
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="筹资现金流净额" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/label_xianjinbiao"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_xianjin1"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_xianjin2"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+                <TextView
+                    android:id="@+id/tv_xianjin3"
+                    style="@style/text_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>

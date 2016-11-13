@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarTitle="涨幅榜"></com.jhs.taolibao.view.TitleBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="证券/代码"
+            android:textColor="@color/Black"
+            android:textSize="24px" />
+
+
+        <TextView
+            android:id="@+id/tv_stock_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:text="涨跌幅"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_stock_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="400px"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="当前价"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Smokey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_stock_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarTitle="修改密码"></com.jhs.taolibao.view.TitleBar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/shape_white_bg"
+        android:orientation="vertical"
+        android:paddingBottom="30px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="30px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="旧密码"
+                android:textColor="@color/Black"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_oldpwd_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="输入手机号错误"
+                android:textColor="@color/Red"
+                android:textSize="32px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_oldpwd"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/select_input"
+            android:hint="请输入旧密码"
+            android:inputType="number"
+            android:paddingLeft="20px"
+            android:textColorHint="@color/Aluminum"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="新密码"
+                android:textColor="@color/Black"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_pwd_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="请输入密码"
+                android:textColor="@color/Red"
+                android:textSize="32px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/select_input"
+            android:hint="请输入6-16位密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20px"
+            android:textColorHint="@color/Aluminum"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="确认密码"
+                android:textColor="@color/Black"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_pwd2_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="请输入密码"
+                android:textColor="@color/Red"
+                android:textSize="32px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/select_input"
+            android:hint="重复输入"
+            android:inputType="textPassword"
+            android:paddingLeft="20px"
+            android:textColorHint="@color/Aluminum"
+            android:textSize="32px" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_modifypwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="40px"
+        android:background="@drawable/btn_shape_red"
+        android:text="确认"
+        android:textColor="@color/White"
+        android:textSize="36px" />
+
+</LinearLayout>

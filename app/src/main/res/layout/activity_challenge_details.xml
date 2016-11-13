@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Background">
+
+    <include layout="@layout/activity_challengehead"></include>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/challenge_tv_keepUser"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:text="擂主持仓"
+                android:gravity="center"
+                android:textSize="24px"
+                android:textColor="@color/Velvet"></TextView>
+
+            <include layout="@layout/menu_devide_line"></include>
+
+            <include layout="@layout/item_stock_info_header"></include>
+
+            <include layout="@layout/menu_devide_line"></include>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.jhs.taolibao.code.simtrade.view.NoScrollListView
+                        android:id="@+id/challenge_lv_keep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </com.jhs.taolibao.code.simtrade.view.NoScrollListView>
+                <include layout="@layout/layout_data_null"></include>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+            android:id="@+id/challenge_btn_chackKeep"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/rectangle_blue_bg"
+            android:text="模拟交易"
+            android:textColor="@color/Ocean"
+        android:layout_marginBottom="50px" />
+
+</LinearLayout>

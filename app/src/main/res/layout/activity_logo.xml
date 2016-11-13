@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jhs.taolibao.code.LogoActivity">
+
+
+    <ImageView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300px" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:text="夺股奇兵"
+        android:textColor="#ffffff"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/tv_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80px"
+        android:text="最好玩的炒股APP"
+        android:textColor="#927845"
+        android:textSize="42px"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarTitle="行业涨幅"></com.jhs.taolibao.view.TitleBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="154px"
+        android:layout_marginTop="20px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_industry_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="50px"
+            android:text="31.98"
+            android:textColor="@color/Red"
+            android:textSize="64px" />
+
+        <TextView
+            android:id="@+id/tv_industry_ratio_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="58px"
+            android:layout_toRightOf="@id/tv_industry_point"
+            android:text="+12.29"
+            android:textColor="@color/Red"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/tv_industry_ratio_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_industry_ratio_value"
+            android:layout_marginBottom="40px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@id/tv_industry_point"
+            android:text="+12.29"
+            android:textColor="@color/Red"
+            android:textSize="20px" />
+
+
+        <TextView
+            android:id="@+id/tv_industry_sale_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="76.69亿"
+            android:textColor="@color/Black"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/label_industry_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:text="成交额"
+            android:textColor="@color/Black"
+            android:textSize="28px" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Smokey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_label_rise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="12px"
+            android:text="上涨"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/tv_rise_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_label_rise"
+            android:layout_alignRight="@id/tv_label_rise"
+            android:layout_below="@id/tv_label_rise"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/Red" />
+
+        <TextView
+            android:id="@+id/tv_label_fall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12px"
+            android:text="下跌"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/tv_fall_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/tv_label_fall"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50px"
+            android:text="0"
+            android:textColor="@color/Olive" />
+
+        <TextView
+            android:id="@+id/tv_label_equel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100px"
+            android:layout_marginTop="12px"
+            android:text="平盘"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/tv_equel_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_label_equel"
+            android:layout_alignRight="@id/tv_label_equel"
+            android:layout_below="@id/tv_label_equel"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/Black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Smokey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginTop="20px"
+        android:background="@color/White">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="证券/代码"
+            android:textColor="@color/Black"
+            android:textSize="24px" />
+
+
+        <TextView
+            android:id="@+id/tv_stock_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:text="涨跌幅"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_stock_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="400px"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="当前价"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Smokey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_stock_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

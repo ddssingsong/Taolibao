@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/menu_devide_doubleline" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_today_delegation"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/White">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginLeft="@dimen/padding_left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="今日委托"
+                android:textSize="@dimen/textsize_select" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/padding_right"
+                android:src="@drawable/ic_more" />
+
+
+            <include
+                layout="@layout/menu_devide_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_today_deal"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/White">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginLeft="@dimen/padding_left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="今日成交"
+                android:textSize="@dimen/textsize_select" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/padding_right"
+                android:src="@drawable/ic_more" />
+
+
+            <include
+                layout="@layout/menu_devide_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_history_delegation"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/White">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginLeft="@dimen/padding_left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="历史委托"
+                android:textSize="@dimen/textsize_select" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/padding_right"
+                android:src="@drawable/ic_more" />
+
+
+            <include
+                layout="@layout/menu_devide_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_history_deal"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/White">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginLeft="@dimen/padding_left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="历史成交"
+                android:textSize="@dimen/textsize_select" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/padding_right"
+                android:src="@drawable/ic_more" />
+
+
+            <include
+                layout="@layout/menu_devide_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

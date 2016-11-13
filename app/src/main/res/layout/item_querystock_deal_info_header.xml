@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:background="@color/White"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_weight="1"
+        android:text="名称"
+        android:textColor="@color/Velvet"
+        android:textSize="24px" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="成交时间"
+        android:textColor="@color/Velvet"
+        android:gravity="right"
+        android:textSize="24px" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:layout_marginRight="30px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成交价"
+            android:textColor="@color/Velvet"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成交量"
+            android:textColor="@color/Velvet"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_left"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="方向"
+            android:textColor="@color/Velvet"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成交金额"
+            android:textColor="@color/Velvet"
+            android:textSize="24px" />
+    </LinearLayout>
+</LinearLayout>

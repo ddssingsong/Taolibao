@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <include layout="@layout/menu_devide_line"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/Background"></View>
+
+    <include layout="@layout/menu_devide_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="总资产" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+
+            <TextView
+                android:id="@+id/keep_allMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/menu_bar_text_normal"></View>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="总收益率" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+
+            <TextView
+                android:id="@+id/keep_all_returnRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/Red" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/menu_devide_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="可用资产" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+
+            <TextView
+                android:id="@+id/keep_enablemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/menu_bar_text_normal"></View>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="当日收益率" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+
+            <TextView
+                android:textColor="@color/Red"
+                android:id="@+id/keep_day_returnRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/menu_devide_line"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/Background"></View>
+
+    <include layout="@layout/menu_devide_line"></include>
+
+    <include layout="@layout/item_stock_info_header"></include>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:layout_weight="1"
+            android:text="名称"
+            android:textColor="@color/Velvet"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="成交时间"
+            android:textColor="@color/Velvet"
+            android:textSize="24px" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交价格"
+                android:gravity="center"
+                android:textColor="@color/Velvet"
+                android:textSize="24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交量"
+                android:gravity="center"
+                android:textColor="@color/Velvet"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_left"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方向"
+                android:gravity="center"
+                android:textColor="@color/Velvet"
+                android:textSize="24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交金额"
+                android:gravity="center"
+                android:textColor="@color/Velvet"
+                android:textSize="24px" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/menu_devide_line"></include>
+    <com.jhs.taolibao.base.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/ptrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/Background"
+        android:dividerHeight="1px"
+        android:orientation="vertical"></com.jhs.taolibao.base.pullrefresh.ui.PullToRefreshListView>
+
+
+</LinearLayout>

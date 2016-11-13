@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAF9F8"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="330px"
+            android:background="#686C77"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/iv_master"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/challenge_default" />
+
+            <TextView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginLeft="16px"
+                android:background="@drawable/challenge_bg1"
+                android:gravity="center"
+                android:text="VS"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_challenger"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginLeft="16px"
+                android:src="@drawable/challenge_default" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/challenge_tv_countdown"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="30px">
+
+        </TextView>
+
+        <include layout="@layout/menu_devide_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="270px"
+            android:background="@color/White"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_red_bg1"
+                        android:padding="3px"
+                        android:text="擂主"
+                        android:textColor="@color/Red"
+                        android:textSize="24px" />
+
+                    <View
+                        android:layout_width="20px"
+                        android:layout_height="match_parent"></View>
+
+                    <TextView
+                        android:id="@+id/challengeinfo_tv_masterName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="名字"
+                        android:textColor="@color/Black"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="180px"
+                    android:layout_marginTop="25px"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30px"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本期收益率"
+                            android:textColor="@color/Velvet"
+                            android:textSize="24px" />
+
+                        <TextView
+                            android:id="@+id/challengeinfo_tv_incomePercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:text="0%"
+                            android:textColor="@color/Black"
+                            android:textSize="32px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:text="累计收益率"
+                            android:textColor="@color/Velvet"
+                            android:textSize="24px" />
+
+                        <TextView
+                            android:id="@+id/challengeinfo_tv_allIncomePercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:text="0%"
+                            android:textColor="@color/Black"
+                            android:textSize="32px" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="160px"
+                        android:background="@color/Smokey"></View>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="60px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="守擂"
+                            android:textColor="@color/Velvet"
+                            android:textSize="24px" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="10px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/challengeinfo_tv_guardTimes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:text="0"
+                                android:textColor="@color/Black"
+                                android:textSize="32px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:text="次"
+                                android:textColor="@color/Velvet"
+                                android:textSize="24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:text="胜率"
+                            android:textColor="@color/Velvet"
+                            android:textSize="24px" />
+
+                        <TextView
+                            android:id="@+id/challengeinfo_tv_successPercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:text="0:0"
+                            android:textColor="@color/Black"
+                            android:textSize="32px" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/Smokey"></View>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_blue_bg1"
+                        android:padding="3px"
+                        android:text="挑战"
+                        android:textColor="@color/Ocean"
+                        android:textSize="24px" />
+
+                    <View
+                        android:layout_width="20px"
+                        android:layout_height="match_parent"></View>
+
+                    <TextView
+                        android:id="@+id/challengeinfo_tv_challengerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="名字"
+                        android:textColor="@color/Black"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/challengeinfo_iv_left"
+                        android:layout_width="60px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="20px"
+                        android:paddingTop="20px"
+                        android:src="@drawable/ic_more1">
+
+                    </ImageView>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="180px"
+                        android:layout_marginTop="25px"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="30px"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="本期收益率"
+                                android:textColor="@color/Velvet"
+                                android:textSize="24px" />
+
+                            <TextView
+                                android:id="@+id/challengeinfo_tv_incomePercent1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:text="0%"
+                                android:textColor="@color/Black"
+                                android:textSize="32px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:text="累计收益率"
+                                android:textColor="@color/Velvet"
+                                android:textSize="24px" />
+
+                            <TextView
+                                android:id="@+id/challengeinfo_tv_allIncomePercent1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:text="0%"
+                                android:textColor="@color/Black"
+                                android:textSize="32px" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="160px"
+                            android:background="@color/Smokey"></View>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="30px"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="守擂"
+                                android:textColor="@color/Velvet"
+                                android:textSize="24px" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="10px"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/challengeinfo_tv_guardTimes1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="bottom"
+                                    android:text="0"
+                                    android:textColor="@color/Black"
+                                    android:textSize="32px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="bottom"
+                                    android:text="次"
+                                    android:textColor="@color/Velvet"
+                                    android:textSize="24px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:text="胜率"
+                                android:textColor="@color/Velvet"
+                                android:textSize="24px" />
+
+                            <TextView
+                                android:id="@+id/challengeinfo_tv_successPercent1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:text="0:0"
+                                android:textColor="@color/Black"
+                                android:textSize="32px" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/challengeinfo_iv_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="20px"
+                        android:paddingRight="20px"
+                        android:paddingTop="20px"
+                        android:src="@drawable/ic_more">
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/menu_devide_line"></include>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/challenge_back"
+        android:layout_width="80px"
+        android:layout_height="96px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="112px">
+
+    <TextView
+        android:id="@+id/tv_stock_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="24px"
+        android:text="中国核建"
+        android:textColor="@color/Black"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tv_stock_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_stock_name"
+        android:layout_below="@id/tv_stock_name"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="10px"
+        android:text="SH60161"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_stock_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="30px"
+        android:text="+6.98%"
+        android:textColor="@color/Red"
+        android:textSize="32px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_stock_dealprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="300px"
+        android:text="20.45"
+        android:textColor="@color/Black"
+        android:textSize="32px"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30px"
+        android:background="@color/Smokey" />
+
+</RelativeLayout>

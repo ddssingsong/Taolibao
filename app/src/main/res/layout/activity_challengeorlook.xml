@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_challengehead"></include>
+
+    <LinearLayout
+        android:id="@+id/look_challenge"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/rectangle_blue_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="42px"
+            android:layout_height="40px"
+            android:src="@drawable/bnt_watch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="观战"
+            android:textColor="@color/Ocean"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Watching_rules"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="观战规则"
+            android:textSize="24px"
+            android:textColor="@color/Velvet"/>
+
+        <ImageView
+            android:id="@+id/look_rule"
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_marginLeft="15px"
+            android:src ="@drawable/ic_ocean"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/challenge_btn"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="@drawable/rectangle_red_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="42px"
+            android:layout_height="40px"
+            android:src="@drawable/bnt_challenge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="挑战"
+            android:textColor="@color/Red"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Challenge_rules"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="挑战规则"
+            android:textSize="24px"
+            android:textColor="@color/Velvet"/>
+
+        <ImageView
+            android:id="@+id/challenge_rule"
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_marginLeft="15px"
+            android:src="@drawable/ic_red"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

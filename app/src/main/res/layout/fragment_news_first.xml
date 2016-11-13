@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="320px"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation="Accordion"
+            custom:pager_animation_span="1100" />
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
+            custom:selected_color="#0095BF"
+            custom:selected_height="24dp"
+            custom:selected_padding_left="20dp"
+            custom:selected_padding_right="20dp"
+            custom:selected_width="24dp"
+            custom:shape="oval"
+            custom:unselected_color="#55333333"
+            custom:unselected_height="24dp"
+            custom:unselected_padding_left="20dp"
+            custom:unselected_padding_right="20dp"
+            custom:unselected_width="24dp" />
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/slider"
+            android:background="@color/Background"
+            android:scrollbarStyle="outsideOverlay"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+    </RelativeLayout>
+
+    <!-- 错误界面-->
+    <include layout="@layout/layout_loading" />
+
+</FrameLayout>

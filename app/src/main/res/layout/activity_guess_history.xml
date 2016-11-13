@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.jhs.taolibao.code.guess.GuessHistoryActivity">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarTitle="竞猜历史"></com.jhs.taolibao.view.TitleBar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_data_null_buy"></include>
+
+            <ExpandableListView
+                android:id="@+id/pull_guess_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="none" />
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jhs.taolibao">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 6.0不检测权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 银联支付 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+    <application
+        android:name=".app.BaseApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="${UMENG_CHANNEL_VALUE}" /> -->
+        <meta-data
+            android:name="TD_CHANNEL_ID"
+            android:value="${TALKINGDATA_VALUE}" />
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+        <meta-data
+            android:name="TD_APP_ID"
+            android:value="69F84E7E7572860CDBA53CD76D355B3F" />
+
+        <activity
+            android:name="com.jhs.taolibao.code.LogoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".code.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".code.user.LoginAndRegitActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".code.news.widget.NewsDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".code.user.UserInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".code.my.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".code.my.widget.BaobiActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".code.my.widget.ExchangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".code.news.widget.NewsLiveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".code.market.StockListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".code.market.StockDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".code.market.SearchActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".code.guess.GuessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".code.my.widget.PhotoActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.UpdateService"
+            android:screenOrientation="portrait" />
+        <!-- 银联支付 -->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".code.guess.GuessHistoryActivity" />
+        <activity android:name=".code.news.widget.AdActivity" />
+
+        <!-- 模拟交易 -->
+        <activity
+            android:name=".code.simtrade.activity.SimtradeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 持仓 -->
+        <activity
+            android:name=".code.simtrade.activity.KeepActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 查询今日成交或委托 -->
+        <activity
+            android:name=".code.simtrade.activity.DealorDelegrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".code.my.GoldActivity" />
+        <!-- 个人信息 -->
+        <activity
+            android:name=".code.challenge.activity.MyInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 持仓信息 -->
+        <activity
+            android:name=".code.challenge.activity.PxCookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 短线排行榜 -->
+        <activity
+            android:name=".code.challenge.activity.ShortRankingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 我的擂台 -->
+        <activity
+            android:name=".code.challenge.activity.MyArenaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 挑战或观战 -->
+        <activity
+            android:name=".code.challenge.activity.ChallengeOrLookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 挑战详情 -->
+        <activity
+            android:name=".code.challenge.activity.ChallengeDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 挑战或观战规则 -->
+        <activity
+            android:name=".code.challenge.activity.ChallengeRuleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- umeng分享 -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4eaee02c527015373b000003" />
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <!-- 微信回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 新浪微博 -->
+        <activity
+            android:name=".wxapi.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+        <!-- qq空间和qq -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 这里需要修改================================================== -->
+                <data android:scheme="tencent1105512013" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".code.news.widget.WebNewsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".code.my.widget.PaySelectActivity"></activity>
+    </application>
+
+</manifest>

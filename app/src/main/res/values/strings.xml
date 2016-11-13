@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">夺股奇兵</string>
+    <string name="toutiao">新闻</string>
+    <string name="bagua">八卦</string>
+    <string name="neican">内参</string>
+    <string name="zhibo">直播</string>
+
+    <string name="loading">正在加载中</string>
+    <string name="faild_network">网络故障，请点击重试</string>
+    <string name="faild_parse">解析错误</string>
+
+    <string name="back">返回</string>
+    <string name="login">登录</string>
+
+
+    <string name="register_testgetcode_left">重新获取(%d)</string>
+    <string name="register_testgetcode_again">重新获取</string>
+
+
+    <string name="hushen">沪深</string>
+    <string name="fenji">分级</string>
+
+    <string name="fenjiA">A级基金</string>
+    <string name="fenjiB">B级基金</string>
+    <string name="fenjiM">母基金</string>
+    <string name="taolibao">套利</string>
+
+
+    <string name="fenshi">分时</string>
+    <string name="riK">日K</string>
+
+    <string name="jiangkuang">简况</string>
+    <string name="caiwu">财务</string>
+
+    <string name="guess_rule"> 1、对上证指数进行预测\n
+2、猜涨跌时间：前一日15:30-当日9:00；\n
+3、夺股奇兵每日给出上证指数的点位区间：要提供维护功能，维护岗每日15:30维护，每日数据应该保存；\n
+4、页面展示上证指数的猜点输入区域，默认显示前一日收盘点位，客户修改了其中点位，并点击我来猜，则认为客户参与了猜涨跌；\n
+5、指数采用取整计算，即直接舍去小数位；\n
+6、每次猜涨跌500个宝币，客户赢得的宝币为500*赔率；\n
+7、\n
+1）每次夺股奇兵对上证指数的预测区间点数，为赔率；例如：上证指数2800-2830，则赔率为30，赔率每天不同；\n
+2）客户猜点在区间内的，采用累进赔率；\n
+3）客户猜点在区间外的，采用分别计算赔率；\n
+4）分别计算赔率是指客户猜点区间在夺股奇兵预测点位之外，如果实际结果在预测区间之外，无论猜多少点，视为猜对；每猜对一个给予1000宝币；
+6）客户猜点结果在预测区间之外，并且实际点位在区间之内，不获得宝币；猜点结果在区间之内，但不等于实际结果，不获得宝币；\n
+</string>
+
+    <string name="challange_rule">每日挑战赛规则</string>
+
+
+    <string name="title_activity_logo">LogoActivity</string>
+    <string name="dummy_button">进入体验</string>
+    <string name="dummy_content">夺股奇兵\n你的选择没有错</string>
+
+
+    <string name="simtrade_buy">买入</string>
+    <string name="simtrade_sell">卖出</string>
+    <string name="simtrade_cancel">撤单</string>
+    <string name="simtrade_keep">持仓</string>
+    <string name="simtrade_search">查询</string>
+
+    <string name="stok_name_code">股票名称或代码</string>
+
+
+    <string name="today_deal">今日成交</string>
+    <string name="today_delegation">今日成交</string>
+    <string name="history_deal">历史成交</string>
+    <string name="history_delegation">历史委托</string>
+
+    <string name="cancel_order">撤单申请已提交</string>
+
+    <string name="pushmsg_center_no_more_msg">已经加载全部</string>
+    <string name="pushmsg_center_pull_up_text">松开加载更多</string>
+    <string name="pushmsg_center_pull_down_text">下拉可以刷新</string>
+    <string name="pushmsg_center_pull_release_text">松开获取更多</string>
+    <string name="pushmsg_center_pull_down_update_time">最后更新时间 : </string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中</string>
+    <string name="xsearch_loading">正在加载中…</string>
+
+    <!-- 加载图片失败时的提示文本 -->
+    <string name="picture_load_image_failed">点击屏幕，重新加载</string>
+    <!-- 加载中提示 -->
+    <string name="picture_image_loading">正在加载…</string>
+
+    <!-- 下拉刷新和上拉加载更多的文本 -->
+    <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_no_more_data">@string/pushmsg_center_no_more_msg</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+</resources>

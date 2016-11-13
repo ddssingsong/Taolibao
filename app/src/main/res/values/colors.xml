@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#312F2F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="menu_bar_text_press">#FE8301</color>
+    <color name="menu_bar_text_normal">#aaa</color>
+
+    <color name="Red">#EC0754</color>
+    <color name="Red_press">#AAEC0754</color>
+    <color name="Olive">#19A75D</color>
+    <color name="Ocean">#3C8BE1</color>
+    <color name="Oceanlight">#E2F6FF</color>
+    <color name="Black">#312F2F</color>
+    <color name="Gunpowder">#606470</color>
+    <color name="Aluminum">#BCB7B8</color>
+    <color name="Smokey">#D8D8D8</color>
+    <color name="Alabaster">#F0EEEC</color>
+    <color name="Background">#FAF9F8</color>
+    <color name="White">#FFF</color>
+    <color name="White1">#FFFFFFFF</color>
+    <color name="Yellow">#FFC123</color>
+    <color name="Velvet">#3D4049</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black_aa">#070705</color>
+    <color name="black_apha">#bf070705</color>
+    <color name="transparent">#00070705</color>
+
+    <!--K线图-->
+    <color name="minute_grayLine">#332D3945</color>
+    <color name="minute_blue">#00D0FC</color>
+    <color name="minute_yellow">#E7B448</color>
+    <color name="minute_black">#22101419</color>
+    <color name="minute_jizhun">#7F9976</color>
+    <color name="minute_zhoutv">#858D93</color>
+    <color name="marker_bg">#331C232E</color>
+
+    <!-- 下拉刷新界面中最后更新时间的文字色 -->
+    <color name="picture_pullrefresh_last_update_time_color">#c4c4c4</color>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.jhs.taolibao.code.market.SearchActivity">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarTitle="选择股票"></com.jhs.taolibao.view.TitleBar>
+
+    <RelativeLayout
+        android:id="@+id/layout_main_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/White">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Smokey" />
+
+        <EditText
+            android:id="@+id/et_search_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="28px"
+            android:background="@drawable/select_shape_edit_red"
+            android:hint="请输入股票代码或基金"
+            android:imeActionLabel="搜索"
+            android:textColorHint="@color/Smokey"
+            android:imeOptions="actionSearch"
+            android:textSize="30px"
+            android:padding="20px"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/et_search_stock"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:text="最近搜索记录"
+                android:textColor="@color/Gunpowder"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_clear_search_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:clickable="true"
+                android:text="清除记录"
+                android:textColor="@color/Ocean"
+                android:textSize="30px" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_search_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_clear_search_history"></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_search_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_clear_search_history"></android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+</LinearLayout>

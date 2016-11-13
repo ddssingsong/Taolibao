@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="188px"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:text="代码"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:layout_width="188px"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:text="实时价格"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:layout_width="188px"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:text="折溢价率"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:layout_width="188px"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:text="付息日"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:layout_width="188px"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:text="规定利率"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:layout_width="188px"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:text="母基需跌"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:layout_width="188px"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:text="涨跌幅"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+</LinearLayout>

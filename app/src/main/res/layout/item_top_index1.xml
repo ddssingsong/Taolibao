@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20px"
+    android:layout_marginLeft="20px"
+    android:layout_marginTop="20px"
+    android:background="@color/White1">
+
+    <TextView
+        android:id="@+id/tv_index1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:text="上证指数"
+        android:textColor="@color/Black"
+        android:textSize="26px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_index1_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_index1_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px"
+        android:text="2885.11"
+        android:textColor="@color/Red"
+        android:textSize="44px" />
+
+
+    <TextView
+        android:id="@+id/tv_index1_ratio_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_index1_value"
+        android:layout_below="@id/tv_index1_value"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:text="25.54"
+        android:textColor="@color/Red"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/tv_index1_ratio_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_index1_value"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@id/tv_index1_ratio_value"
+        android:text="+10.00%"
+        android:textColor="@color/Red"
+        android:textSize="20px" />
+
+
+</RelativeLayout>
+
+

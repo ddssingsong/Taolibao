@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/iv_news_live_icon"
+        android:layout_width="match_parent"
+        android:layout_height="320px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="320px"
+        android:scaleType="fitXY"
+        android:src="@drawable/mengban" />
+
+    <TextView
+        android:id="@+id/tv_news_dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_news_live_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="20px"
+        android:text="新闻描述"
+        android:textColor="@color/White"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_news_dec"
+        android:layout_below="@id/iv_news_live_icon"
+        android:layout_marginTop="20px"
+        android:text="2小时前"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_news_ccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_news_dec"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/tv_news_time"
+        android:text="100 评论"
+        android:textColor="@android:color/darker_gray" />
+</RelativeLayout>

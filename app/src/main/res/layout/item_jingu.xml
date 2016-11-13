@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:clickable="true"
+    android:background="@drawable/selecter_press">
+
+    <TextView
+        android:id="@+id/tv_gold_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60px"
+        android:text="食品饮料"
+        android:textColor="@color/Black"
+        android:textSize="40px" />
+
+
+    <TextView
+        android:id="@+id/tv_gold_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="60px"
+        android:text="100000"
+        android:textColor="@color/Gunpowder"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40px"
+        android:background="@color/Smokey" />
+
+</RelativeLayout>

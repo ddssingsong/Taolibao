@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370px"
+        android:background="@color/Gunpowder">
+
+        <LinearLayout
+            android:id="@+id/person_info_ll_back"
+            android:layout_width="80px"
+            android:layout_height="96px"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20px"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/person_info_iv_avatar"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/img_default_avatar"
+            android:layout_marginBottom="60px"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/person_info_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_info_ll_back"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@+id/person_info_iv_avatar"
+            android:text="名字"
+            android:textColor="@color/White"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/person_info_tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_info_tv_name"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="36px"
+            android:layout_marginRight="30px"
+            android:layout_toRightOf="@+id/person_info_iv_avatar"
+            android:text=""
+            android:textColor="@color/Aluminum"
+            android:textSize="30px"
+            android:maxLines="2"
+            android:lineSpacingMultiplier="1.2"/>
+        <LinearLayout
+            android:id="@+id/person_info_ll_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/person_info_tv_name"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="36px"
+            android:layout_toRightOf="@+id/person_info_iv_avatar"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计收益率："
+                android:textSize="30px"
+                android:textColor="@color/Aluminum"/>
+            <TextView
+                android:id="@+id/person_info_tv_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="30px"
+                android:textColor="@color/Yellow"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

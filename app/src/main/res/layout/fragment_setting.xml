@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarTitle="设置"></com.jhs.taolibao.view.TitleBar>
+
+    <RelativeLayout
+        android:id="@+id/layout_setting_modifypwd"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_below="@id/titlebar"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_label_setting_modifypwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_setting_clear"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_below="@id/layout_setting_modifypwd"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_label_setting_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="清除缓存"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:id="@+id/iv_more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:id="@+id/tv_settig_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/iv_more1"
+            android:gravity="center_vertical"
+            android:maxLength="20"
+            android:text="0Mb"
+            android:textColor="@color/Gunpowder"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_setting_checkv"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_below="@id/layout_setting_clear"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_label_setting_checkv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="检查更新"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:id="@+id/iv_more2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:id="@+id/tv_settig_checkv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/iv_more2"
+            android:gravity="center_vertical"
+            android:maxLength="20"
+            android:text="V1.0.0"
+            android:textColor="@color/Gunpowder"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_exit"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="退出"
+            android:textColor="@color/Red_press"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+    </RelativeLayout>
+
+</RelativeLayout>

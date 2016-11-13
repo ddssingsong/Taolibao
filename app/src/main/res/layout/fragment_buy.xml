@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/menu_devide_line">
+    </include>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="20px"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:layout_marginRight="@dimen/padding_left">
+            <com.jhs.taolibao.code.simtrade.view.CustomAutoCompleteTextView
+                android:id="@+id/simtrade_et_stock_name_code"
+                android:layout_width="400px"
+                android:layout_height="80px"
+                android:background="@drawable/rectangle_red_bg" />
+            <LinearLayout
+                android:layout_marginTop="20px"
+                android:orientation="horizontal"
+                android:layout_width="400px"
+                android:layout_height="80px"
+                android:background="@drawable/rect_gray_bg">
+                <ImageButton
+                    android:id="@+id/simtrade_btn_reduce"
+                    android:layout_width="80px"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btn_buyreduce"
+                    android:background="@null"
+                    />
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/Smokey"></View>
+                <EditText
+                    android:id="@+id/simtrade_et_stock_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/Olive"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/Smokey"></View>
+                <ImageButton
+                    android:id="@+id/simtrade_btn_plus"
+                    android:layout_width="80px"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btn_buyplus"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="400px"
+                android:layout_height="64px">
+                <TextView
+                android:id="@+id/tv_limit_dowm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跌停"
+                android:textSize="24px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:textColor="@color/Velvet"/>
+                <TextView
+                    android:id="@+id/tv_limit_dowm_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textSize="24px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_left"
+                    android:textColor="@color/Olive"
+                    android:layout_toRightOf="@+id/tv_limit_dowm" />
+
+                <TextView
+                    android:id="@+id/tv_limit_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="涨停"
+                    android:textSize="24px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="250px"
+                    android:textColor="@color/Velvet"/>
+                <TextView
+                    android:id="@+id/tv_limit_up_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textSize="24px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_left"
+                    android:textColor="@color/Red"
+                    android:layout_toRightOf="@+id/tv_limit_up" />
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/simtrade_et_stock_count"
+                android:layout_width="400px"
+                android:layout_height="80px"
+                android:background="@drawable/rectangle_gray_bg"
+                android:textColorHint="@color/Aluminum"
+                android:textSize="30px"
+                android:hint="数量"
+                android:inputType="number"
+                android:gravity="center"
+                android:singleLine="true" />
+            <RelativeLayout
+                android:layout_width="400px"
+                android:layout_height="64px">
+                <TextView
+                    android:id="@+id/tv_total_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可买量:"
+                    android:textSize="24px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_left"
+                    android:textColor="@color/Velvet"/>
+                <TextView
+                    android:id="@+id/tv_total_count_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textSize="24px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_left"
+                    android:textColor="@color/Red"
+                    android:layout_toRightOf="@+id/tv_total_count" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="400px"
+                android:layout_height="80px"
+                android:background="@drawable/rectangle_red_solid_bg"
+                android:text="买入"
+                android:textColor="@color/White"
+                android:textSize="30px"
+                android:layout_marginBottom="32px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_left"
+            android:layout_marginTop="20px">
+
+            <com.jhs.taolibao.code.simtrade.view.NoScrollListView
+                android:id="@+id/simtrade_lv_sell"
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent">
+
+            </com.jhs.taolibao.code.simtrade.view.NoScrollListView>
+            <com.jhs.taolibao.code.simtrade.view.NoScrollListView
+                android:id="@+id/simtrade_lv_buy"
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:layout_marginTop="20px"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent">
+
+            </com.jhs.taolibao.code.simtrade.view.NoScrollListView>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/menu_devide_doubleline">
+
+    </include>
+    <include layout="@layout/item_stock_info_header"></include>
+
+    <include layout="@layout/menu_devide_line"></include>
+    <ListView
+        android:id="@+id/simtrade_lv_stocks_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White">
+
+    </ListView>
+    <include layout="@layout/layout_data_null_buy"></include>
+
+</LinearLayout>

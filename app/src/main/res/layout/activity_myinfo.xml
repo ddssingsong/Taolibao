@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/item_challenge_person_info_header"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:layout_marginLeft="@dimen/padding_left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="累计收益率"
+                    android:textColor="@color/Black"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/challege_info_tv_accumul_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="@color/Black"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/menu_devide_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:layout_marginLeft="@dimen/padding_left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="累计收益区间"
+                    android:textColor="@color/Black"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/challege_info_tv_accumul_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%-0%"
+                        android:textColor="@color/Black"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <include
+                    layout="@layout/menu_devide_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:layout_marginLeft="@dimen/padding_left">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="年化收益率"
+                    android:textColor="@color/Black"
+                    android:textSize="30px" />
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/challege_info_tv_annual_yield"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="@color/Black"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <include
+                    layout="@layout/menu_devide_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:layout_marginLeft="@dimen/padding_left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="守擂次数"
+                    android:textColor="@color/Black"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/challege_info_tv_total_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/Black"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="次"
+                        android:textColor="@color/Black"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <include
+                    layout="@layout/menu_devide_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:layout_marginLeft="@dimen/padding_left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="胜率"
+                    android:textColor="@color/Black"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/challege_info_tv_odds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 : 0"
+                        android:textColor="@color/Black"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/menu_devide_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <include layout="@layout/menu_devide_line"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_gray_bg"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="360px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="92px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:textSize="32px"
+                android:text="我的宝币：" />
+            <TextView
+                android:id="@+id/costdialog_tv_totalCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/Red"
+                android:textSize="36px"
+                android:text="1256" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/costdialog_tv_costMsg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="34px"
+            android:textColor="@color/Black"
+            android:textSize="32px"
+            android:text="您选择观战将扣除20宝币"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal" />
+
+        <include layout="@layout/menu_devide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_neg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/Velvet"
+                android:textSize="30px"
+                android:text="取消"/>
+
+            <View
+                android:id="@+id/img_line"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/Smokey" />
+
+            <Button
+                android:id="@+id/btn_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:textSize="30px"
+                android:text="确定"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90px"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_guess_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:text="2016年12月1日"
+        android:textColor="@color/Gunpowder"
+        android:textSize="@dimen/text_content" />
+
+    <ImageView
+        android:id="@+id/iv_up_down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px" />
+
+    <TextView
+        android:id="@+id/label_amount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="24px"
+        android:layout_toLeftOf="@id/iv_up_down_arrow"
+        android:text="宝币"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/text_content" />
+
+    <TextView
+        android:id="@+id/tv_guess_history_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/label_amount1"
+        android:text="1000"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/text_content" />
+
+    <TextView
+        android:id="@+id/label_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tv_guess_history_amount"
+        android:text="获得"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/text_content" />
+</RelativeLayout>

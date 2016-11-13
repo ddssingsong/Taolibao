@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/tv_checkin_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="60px"
+        android:drawableLeft="@drawable/ic_checkin"
+        android:drawablePadding="20px"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_checkin_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_checkin_day"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40px"
+        android:layout_marginTop="40px"
+        android:lineSpacingMultiplier="1.5"
+        android:textSize="32px" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_checkin_tip"
+        android:background="@color/Smokey" />
+
+    <TextView
+        android:id="@+id/tv_checkin_submit"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@id/divider"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selecter_press"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/Black"
+        android:textSize="36px" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

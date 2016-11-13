@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.jhs.taolibao.base.pullrefresh.ui.PullToRefreshListView
+            android:id="@+id/ptrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_left">
+
+        </com.jhs.taolibao.base.pullrefresh.ui.PullToRefreshListView>
+        <include layout="@layout/layout_data_null"></include>
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:text="去挑战"
+        android:textColor="@color/Red"
+        android:textSize="30px"
+        android:id="@+id/btn_challenge"
+        android:layout_marginBottom="120px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/rectangle_red_bg"/>
+
+
+</LinearLayout>

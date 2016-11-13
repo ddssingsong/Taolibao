@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selecter_press"
+    android:clickable="true"
+    android:paddingBottom="20px"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:paddingTop="20px">
+
+    <TextView
+        android:id="@+id/tv_news_dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="25px"
+        android:layout_toEndOf="@+id/iv_news_icon"
+        android:layout_toRightOf="@+id/iv_news_icon"
+        android:textColor="@color/Black"
+        android:text="我是新闻描述啊,你们觉得怎么样啊啊啊啊"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_news_dec"
+        android:layout_below="@id/tv_news_dec"
+        android:textSize="24px"
+        android:layout_marginTop="20px"
+        android:text="2小时前"
+        android:textColor="@color/Aluminum" />
+
+    <TextView
+        android:id="@+id/tv_news_ccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_news_dec"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:textSize="24px"
+        android:layout_toRightOf="@id/tv_news_time"
+        android:text="100 评论"
+        android:textColor="@color/Aluminum" />
+
+
+</RelativeLayout>

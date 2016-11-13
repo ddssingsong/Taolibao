@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jhs.taolibao.code.my.widget.PaySelectActivity">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarTitle="选择支付"></com.jhs.taolibao.view.TitleBar>
+
+    <RadioGroup
+        android:id="@+id/select_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px">
+
+        <RadioButton
+            android:id="@+id/radio_yinlian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="银联支付" />
+
+        <RadioButton
+            android:id="@+id/radio_huifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="汇付天下" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60px"
+        android:textColor="@color/White"
+        android:layout_marginLeft="30px"
+        android:textSize="32px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/btn_shape_red"
+        android:text="提交" />
+</RelativeLayout>

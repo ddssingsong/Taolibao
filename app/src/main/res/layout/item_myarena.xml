@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="690px"
+        android:layout_height="220px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_gray_edit">
+        <ImageView
+            android:id="@+id/iv_leizhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:layout_marginTop="@dimen/padding_left"
+            android:src="@drawable/ic_leizhu" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="@dimen/padding_right"
+            android:layout_toRightOf="@+id/iv_leizhu"
+            android:text="俺家有个大石头"
+            android:textColor="@color/Black"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_below="@+id/iv_leizhu"
+            android:layout_marginLeft="@dimen/padding_right"
+            android:layout_marginTop="24px"
+            android:src="@drawable/img_default_avatar" />
+
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="24px"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="守擂"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/tv_gurad_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="0次"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="68px"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="18px"
+            android:layout_marginTop="24px"
+            android:layout_toRightOf="@+id/ll1"
+            android:background="@color/Smokey"></View>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="24px"
+            android:layout_toRightOf="@+id/ll1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="胜率"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/tv_winrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="0:0"
+                android:textSize="22px"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="68px"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="18px"
+            android:layout_marginTop="24px"
+            android:layout_toRightOf="@+id/ll2"
+            android:background="@color/Smokey"></View>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="24px"
+            android:layout_toRightOf="@+id/ll2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收益率"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/tv_eranrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="0%"
+                android:textSize="22px"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_check_info"
+            android:layout_width="160px"
+            android:layout_height="64px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60px"
+            android:background="@drawable/shape_gray_edit"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="@color/Velvet"
+            android:textSize="30px"/>
+        <TextView
+            android:id="@+id/tv_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60px"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/Velvet"
+            android:textSize="30px"
+            android:visibility="gone">
+
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

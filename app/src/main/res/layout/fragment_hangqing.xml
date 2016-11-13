@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/White"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_hushen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableBottom="@drawable/rectangle_line_red"
+            android:gravity="center"
+            android:text="沪深"
+            android:textColor="@color/Red"
+            android:textSize="40px" />
+
+        <com.jhs.taolibao.view.RainbowTextView
+            android:id="@+id/tv_fenji"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:drawableBottom="@drawable/rectangle_line_white"
+            android:gravity="center"
+            android:text="分级"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Smokey" />
+
+    <FrameLayout
+        android:id="@+id/content_hangqing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+</LinearLayout>

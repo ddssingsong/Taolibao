@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".code.my.widget.BaobiActivity">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarTitle="充值宝币"></com.jhs.taolibao.view.TitleBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/shape_white_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60px"
+            android:src="@drawable/ic_diamond_big" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60px"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的宝币："
+                android:textColor="@color/Black"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_baobi_baobi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/Red"
+                android:textSize="44px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="购买宝币"
+            android:textColor="@color/Gunpowder"
+            android:textSize="32px" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_baobi_30"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/label_baobi_30"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="3000 宝币"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/iv_more"
+            android:gravity="center_vertical"
+            android:text="￥30.00"
+            android:textColor="@color/Gunpowder"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_baobi_50"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/label_baobi_50"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="5000 宝币"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:id="@+id/iv_more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/iv_more1"
+            android:gravity="center_vertical"
+            android:text="￥50.00"
+            android:textColor="@color/Gunpowder"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_baobi_108"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/label_baobi_108"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="10800 宝币"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:id="@+id/iv_more3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/iv_more3"
+            android:gravity="center_vertical"
+            android:text="￥108.00"
+            android:textColor="@color/Gunpowder"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_baobi_so"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/label_baobi_so"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="自由充："
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/et_baobi_edit"
+            android:layout_width="140px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="14px"
+            android:layout_marginLeft="14px"
+            android:layout_marginRight="14px"
+            android:layout_marginTop="14px"
+            android:layout_toRightOf="@id/label_baobi_so"
+            android:background="@drawable/shape_comment"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:text="1000" />
+
+        <TextView
+            android:id="@+id/tv_label_tttt"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/et_baobi_edit"
+            android:text="宝币"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:id="@+id/iv_more2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:id="@+id/tv_baobi_so"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/iv_more2"
+            android:gravity="center_vertical"
+            android:text="￥10.00"
+            android:textColor="@color/Gunpowder"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+
+</LinearLayout>

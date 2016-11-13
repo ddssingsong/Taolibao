@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarRightImage="@drawable/star_press"
+        app:titleBarTitle="个人签名"></com.jhs.taolibao.view.TitleBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="30px">
+
+        <EditText
+            android:id="@+id/tv_modify_sign"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:background="@drawable/shape_gray_edit"
+            android:gravity="top|left"
+            android:hint="说一句让所有人记住"
+            android:padding="20px"
+            android:maxLength="40"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Smokey"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:layout_alignBottom="@id/tv_modify_sign"
+            android:layout_alignRight="@id/tv_modify_sign"
+            android:src="@drawable/btn_clear_input" />
+
+        <TextView
+            android:id="@+id/tv_modify_sign_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_modify_sign"
+            android:layout_alignTop="@id/iv_clear"
+            android:layout_toLeftOf="@id/iv_clear"
+            android:gravity="center"
+            android:text="40"
+            android:textColor="@color/Smokey"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

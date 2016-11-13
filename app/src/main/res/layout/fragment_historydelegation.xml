@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_querystock_delegation_info_header"/>
+    <include layout="@layout/menu_devide_line"></include>
+    <com.jhs.taolibao.base.pullrefresh.ui.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ptrl"
+        android:divider="@null"
+        android:dividerHeight="1px"
+        android:orientation="vertical"></com.jhs.taolibao.base.pullrefresh.ui.PullToRefreshListView>
+</LinearLayout>

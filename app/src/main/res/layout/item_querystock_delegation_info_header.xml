@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:background="@color/White"
+    android:gravity="center_vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="名称"
+        android:textSize="24px"
+        android:textColor="@color/Velvet"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/padding_left"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="委托价"
+            android:textSize="24px"
+            android:textColor="@color/Velvet"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="委托时间"
+            android:textSize="24px"
+            android:textColor="@color/Velvet"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:gravity="right"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="委托量"
+           android:textSize="24px"
+           android:textColor="@color/Velvet"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="成交量"
+           android:textSize="24px"
+           android:textColor="@color/Velvet"/>
+
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态"
+        android:textSize="24px"
+        android:textColor="@color/Velvet"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/padding_left"
+        />
+
+</LinearLayout>

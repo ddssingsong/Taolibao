@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selecter_press"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/iv_news_icon"
+        android:layout_width="240px"
+        android:layout_height="160px"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="20px" />
+
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="25px"
+        android:layout_toEndOf="@+id/iv_news_icon"
+        android:layout_toRightOf="@+id/iv_news_icon"
+        android:text="我是新闻描述啊,你们觉得怎么样啊啊啊啊"
+        android:textColor="@color/Black"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_news_icon"
+        android:layout_alignLeft="@id/tv_news_title"
+        android:text="2小时前"
+        android:textColor="@color/Aluminum"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_news_ccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_news_icon"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/tv_news_time"
+        android:text="100 评论"
+        android:textColor="@color/Aluminum"
+        android:textSize="24px" />
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_menu"
+        android:layout_alignParentTop="true"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/layout_toutiao"
+                android:layout_width="fill_parent"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/image_toutiao"
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="14px"
+                    android:src="@drawable/ic_tab_news" />
+
+                <TextView
+                    android:id="@+id/tv_toutiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="5px"
+                    android:text="头条"
+                    android:textColor="@color/Gunpowder"
+                    android:textSize="24px" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/layout_hangqing"
+                android:layout_width="fill_parent"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/image_hangqing"
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="14px"
+                    android:src="@drawable/ic_tab_market" />
+
+                <TextView
+                    android:id="@+id/tv_hangqing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="5px"
+                    android:text="行情"
+                    android:textColor="@color/Gunpowder"
+                    android:textSize="24px" />
+            </FrameLayout>
+
+            <!-- 留白 -->
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></FrameLayout>
+
+            <!-- 我的空间 -->
+
+            <FrameLayout
+                android:id="@+id/layout_tiaozhan"
+                android:layout_width="fill_parent"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/image_tiaozhan"
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="14px"
+                    android:src="@drawable/ic_tab_challenge" />
+
+                <TextView
+                    android:id="@+id/tv_tiaozhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="5px"
+                    android:text="挑战"
+                    android:textColor="@color/Gunpowder"
+                    android:textSize="24px" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/layout_user"
+                android:layout_width="fill_parent"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/image_user"
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="14px"
+                    android:src="@drawable/ic_tab_account" />
+
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="5px"
+                    android:text="我的"
+                    android:textColor="@color/Gunpowder"
+                    android:textSize="24px" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Smokey" />
+    </FrameLayout>
+
+    <!-- 中间按钮 -->
+    <ImageView
+        android:id="@+id/plus_btn"
+        android:layout_width="80px"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/main_menu"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/ic_tab_mine" />
+
+
+</RelativeLayout>

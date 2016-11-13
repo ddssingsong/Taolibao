@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarRightImage="@drawable/btn_nav_search"
+        app:titleBarTitle="我的自选"></com.jhs.taolibao.view.TitleBar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_index"
+        android:layout_width="wrap_content"
+        android:background="@color/Alabaster"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/White">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="名称"
+            android:textColor="@color/Black"
+            android:textSize="24px" />
+
+
+        <TextView
+            android:id="@+id/tv_stock_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:text="涨跌幅"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_stock_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="400px"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="当前价"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Smokey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_no_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160px"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv_null_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_null_list_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_null_stock"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48px"
+                android:text="暂无自选 点击添加" />
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_stock_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+
+</LinearLayout>

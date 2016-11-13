@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/layout_taolibao_item_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90px"
+            android:background="@color/Red">
+
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/Red"
+                android:gravity="center"
+                android:text="刷新"
+                android:textColor="@color/White"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="基金详情"
+                android:textColor="@color/White"
+                android:textSize="36px" />
+
+            <ImageView
+                android:id="@+id/txt_taoli_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:padding="20px"
+                android:src="@drawable/btn_close_popup" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:clickable="true"
+                android:text="A实时价格"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_Arealprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:clickable="true"
+                android:text="1.02"
+                android:textColor="@color/Ocean"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="@color/Smokey">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:clickable="true"
+                android:text="B实时价格"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_Brealprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:clickable="true"
+                android:textColor="@color/Ocean"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:clickable="true"
+                android:text="母基净值"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_realprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:clickable="true"
+                android:textColor="@color/Ocean"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="@color/Smokey">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:clickable="true"
+                android:text="拟合价格"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_matchedValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:clickable="true"
+                android:textColor="@color/Ocean"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:clickable="true"
+                android:text="折溢价率"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_fundConvertPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:clickable="true"
+                android:textColor="@color/Ocean"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="@color/Smokey">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:clickable="true"
+                android:text="比例(A:B)"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_ratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:clickable="true"
+                android:textColor="@color/Ocean"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:clickable="true"
+                android:text="分级B实时成交量"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_turnover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:clickable="true"
+                android:textColor="@color/Ocean"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Smokey"
+            android:paddingBottom="6px"
+            android:paddingTop="6px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:clickable="true"
+                android:text="申购费"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_buyprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:clickable="true"
+                android:gravity="right"
+                android:textColor="@color/Gunpowder"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6px"
+            android:paddingTop="6px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:clickable="true"
+                android:text="赎回费"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/txt_saleprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:clickable="true"
+                android:textColor="@color/Gunpowder"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Velvet"
+        android:paddingLeft="40px">
+
+        <ImageView
+            android:id="@+id/iv_my_edit"
+            android:layout_width="80px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="20px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="20px"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_edit_profile"
+            android:visibility="gone" />
+
+        <com.jhs.taolibao.view.CircleImageView
+            android:id="@+id/iv_my_icon"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginBottom="40px"
+            android:layout_marginTop="56px"
+            android:src="@drawable/img_default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_my_icon"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@id/iv_my_icon"
+            android:text="游客"
+            android:textColor="@color/White"
+            android:textSize="44px" />
+
+        <Button
+            android:id="@+id/btn_user_login"
+            android:layout_width="200px"
+            android:layout_height="72px"
+            android:layout_alignLeft="@id/tv_my_name"
+            android:layout_below="@id/tv_my_name"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@id/iv_my_icon"
+            android:background="@drawable/select_btn_submit"
+            android:text="@string/login"
+            android:textColor="@color/White"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/btn_user_register"
+            android:layout_width="200px"
+            android:layout_height="72px"
+            android:layout_below="@id/tv_my_name"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@id/btn_user_login"
+            android:background="@drawable/select_btn_submit"
+            android:text="注册账号"
+            android:textColor="@color/White"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:id="@+id/tv_my_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_my_name"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="16px"
+            android:layout_toRightOf="@id/iv_my_icon"
+            android:maxLength="39"
+            android:text="Chairman and CEO of Berkshire Hathway"
+            android:textColor="@color/Aluminum"
+            android:textSize="30px"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="124px"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/layout_my_checkin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_press"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_checkin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12px"
+                android:text="抽奖"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_my_challenge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_press"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_my_challenge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12px"
+
+                android:text="我的挑战"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_my_guess"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_press"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_guess" />
+
+            <com.jhs.taolibao.view.ShineTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12px"
+                android:text="猜涨跌"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Smokey" />
+
+    <RelativeLayout
+        android:id="@+id/layout_my_coin"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/label_my_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="我的宝币:"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_my_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@id/label_my_coin"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/Red"
+            android:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/iv_more"
+            android:gravity="center_vertical"
+            android:text="充值"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_my_coin_change"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/label_my_coin_change"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="兑换京东卡"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_my_simulate"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/label_my_simulate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="模拟交易"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_my_jingu"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <com.jhs.taolibao.view.ShineTextView
+            android:id="@+id/label_my_jingu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="每日金股"
+            android:textColor="@color/Red"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_my_fenji"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label_my_fenji"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="分级套利"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_my_setting"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@drawable/selecter_press"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/label_my_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:textColor="@color/Black"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/ic_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="740px"
+    android:background="@drawable/challenge_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/child_bg"
+        android:layout_width="match_parent"
+        android:layout_height="740px"
+        android:background="#c6ffffff"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/child_identity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3px"
+                android:text="擂主"
+                android:textSize="24px"
+                android:textColor="@color/Red"
+                android:background="@drawable/rectangle_red_bg1"
+                android:layout_marginRight="5px"/>
+
+            <TextView
+                android:id="@+id/child_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2px"
+                android:text="名字"
+                android:textSize="30px"
+                android:textColor="@color/Black"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/child_icon"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:src="@drawable/img_default_avatar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px">
+
+            <LinearLayout
+                android:id="@+id/ll_guanfang_info"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计收益率"
+                    android:textSize="28px"
+                    android:textColor="@color/Velvet"/>
+                <TextView
+                    android:id="@+id/tv_cumulativeReturns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16px"
+                    android:text="0%"
+                    android:textSize="36px"
+                    android:textColor="@color/Black"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_leizhu_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="守擂"
+                        android:textSize="28px"
+                        android:textColor="@color/Velvet"/>
+
+                    <View
+                        android:layout_width="20px"
+                        android:layout_height="16px"></View>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/child_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="36px"
+                            android:textColor="@color/Black" />
+
+                        <View
+                            android:layout_width="15px"
+                            android:layout_height="15px"></View>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="次"
+                            android:textSize="28px"
+                            android:textColor="@color/Velvet"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="50px"
+                    android:layout_height="100px"></View>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="胜率"
+                        android:textSize="28px"
+                        android:textColor="@color/Velvet"/>
+
+                    <View
+                        android:layout_width="20px"
+                        android:layout_height="16px"></View>
+
+                    <TextView
+                        android:id="@+id/child_success"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:0"
+                        android:textSize="36px"
+                        android:textColor="@color/Black"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/child_btn"
+            android:layout_width="420px"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:layout_marginTop="50px"
+            android:background="@drawable/rectangle_red_solid_bg"
+            android:text="观战 / 挑战"
+            android:textColor="@color/White"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/child_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20px"
+            android:text="今日开赛"
+            android:textSize="24px"
+            android:textColor="@color/Velvet"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"></View>
+
+
+    </LinearLayout>
+</LinearLayout>

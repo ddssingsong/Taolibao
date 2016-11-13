@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selecter_press"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundAName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24px"
+            android:text="创业板A"
+            android:textColor="@color/Black"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundACode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_taolibaolist_item_fundAName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:text="150138"
+            android:textColor="@color/Gunpowder"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundARealprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_taolibaolist_item_fundACode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="10px"
+            android:text="0.9820"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundBName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24px"
+            android:text="创业板A"
+            android:textColor="@color/Black"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundBCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_taolibaolist_item_fundBName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:text="150138"
+            android:textColor="@color/Gunpowder"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundBRealprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_taolibaolist_item_fundBCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="10px"
+            android:text="0.9820"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundMName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24px"
+            android:text="创业板A"
+            android:textColor="@color/Black"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundMCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_taolibaolist_item_fundMName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:text="150138"
+            android:textColor="@color/Gunpowder"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundMRealprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_taolibaolist_item_fundMCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="10px"
+            android:text="0.9820"
+            android:textColor="@color/Ocean"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_taolibaolist_item_fundConvertPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_shape_red"
+            android:paddingBottom="10px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:paddingTop="10px"
+            android:text="11.2%"
+            android:textColor="@color/White"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+</LinearLayout>

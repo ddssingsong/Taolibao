@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_shape_red_nomal" android:state_enabled="true" />
+    <item android:drawable="@drawable/btn_shape_red_unenable" android:state_enabled="false" />
+    <item android:drawable="@drawable/btn_shape_red_press" android:state_pressed="true" />
+    <item android:drawable="@drawable/btn_shape_red_nomal" android:state_pressed="false" />
+
+
+</selector>

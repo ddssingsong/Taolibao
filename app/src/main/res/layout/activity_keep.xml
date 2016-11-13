@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_lay"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134px"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="总资产" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+
+
+            <TextView
+                android:id="@+id/keep_allMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/menu_bar_text_normal"></View>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="总收益率" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+
+            <TextView
+                android:id="@+id/keep_all_returnRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/Red" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/menu_devide_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134px"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="可用资产" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+
+            <TextView
+                android:id="@+id/keep_enablemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/menu_bar_text_normal"></View>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="当日收益率" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+
+            <TextView
+                android:id="@+id/keep_day_returnRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/Red" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/menu_devide_line"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/Background"
+        android:visibility="gone"></View>
+
+    <include layout="@layout/menu_devide_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/minute_hours_re"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/minute_hours_tv"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="分时" />
+
+            <TextView
+                android:id="@+id/minute_hours_sign"
+                android:layout_width="100px"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/Red"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dayK_re"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/dayK_tv"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="日K" />
+
+            <TextView
+                android:id="@+id/dayK_sign"
+                android:layout_width="100px"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/Red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/menu_devide_line"></include>
+
+
+    <!--走势图部分-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="456px"
+        android:visibility="gone">
+
+        <!--分时-->
+        <FrameLayout
+            android:id="@+id/minute_hours"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+        </FrameLayout>
+
+        <!--日K-->
+        <FrameLayout
+            android:id="@+id/dayK"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/Background"
+        android:visibility="gone"></View>
+
+
+    <include layout="@layout/menu_devide_line"></include>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jhs.taolibao.base.pullrefresh.ui.PullToRefreshListView
+            android:id="@+id/noscrolllistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.jhs.taolibao.base.pullrefresh.ui.PullToRefreshListView>
+
+      <!--  <include layout="@layout/layout_data_null"></include>-->
+    </FrameLayout>
+
+
+</LinearLayout>

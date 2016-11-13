@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/today_open_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="4px"
+        android:text="今开"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/today_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/today_open_label"
+        android:layout_below="@id/today_open_label"
+        android:layout_marginTop="8px"
+        android:text="--.--."
+        android:textColor="@color/Black"
+        android:textSize="24px" />
+
+
+    <TextView
+        android:id="@+id/yesterday_income_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/today_open"
+        android:layout_below="@id/today_open"
+        android:layout_marginTop="40px"
+        android:text="昨收"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/yesterday_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/yesterday_income_label"
+        android:layout_below="@id/yesterday_income_label"
+        android:layout_marginTop="8px"
+        android:text="--.--"
+        android:textColor="@color/Black"
+        android:textSize="24px" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/today_open_label"
+        android:layout_alignBottom="@id/yesterday_income"
+        android:layout_marginLeft="186px"
+        android:background="@color/Smokey" />
+
+
+    <TextView
+        android:id="@+id/turnover_num_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="4px"
+        android:layout_toRightOf="@id/divider1"
+        android:text="成交量"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/turnover_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/turnover_num_label"
+        android:layout_below="@id/turnover_num_label"
+        android:layout_marginTop="8px"
+        android:text="--.--万"
+        android:textColor="@color/Black"
+        android:textSize="24px" />
+
+
+    <TextView
+        android:id="@+id/turnover_value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/turnover_num"
+        android:layout_below="@id/today_open"
+        android:layout_marginTop="40px"
+        android:text="成交额"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/turnover_value_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/turnover_value_label"
+        android:layout_below="@id/turnover_value_label"
+        android:layout_marginTop="8px"
+        android:text="--.--万"
+        android:textColor="@color/Black"
+        android:textSize="24px" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="1px"
+        android:layout_alignBottom="@id/yesterday_income"
+        android:layout_alignTop="@id/today_open_label"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="372px"
+        android:background="@color/Smokey" />
+
+    <TextView
+        android:id="@+id/top_turnover_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="4px"
+        android:layout_toRightOf="@id/divider2"
+        android:text="最高"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/top_turnover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/top_turnover_label"
+        android:layout_below="@id/top_turnover_label"
+        android:layout_marginTop="8px"
+        android:text="--.--"
+        android:textColor="@color/Black"
+        android:textSize="24px" />
+
+
+    <TextView
+        android:id="@+id/low_turnover_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/top_turnover"
+        android:layout_below="@id/today_open"
+        android:layout_marginTop="40px"
+        android:text="最低"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/low_turnover_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/low_turnover_label"
+        android:layout_below="@id/low_turnover_label"
+        android:layout_marginTop="8px"
+        android:text="--.--"
+        android:textColor="@color/Black"
+        android:textSize="24px" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="1px"
+        android:layout_alignTop="@id/today_open_label"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/yesterday_income"
+        android:layout_marginLeft="558px"
+        android:background="@color/Smokey" />
+
+
+    <TextView
+        android:id="@+id/turnover_rate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="4px"
+        android:layout_toRightOf="@id/divider3"
+        android:text="内盘"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/turnover_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/turnover_rate_label"
+        android:layout_below="@id/turnover_rate_label"
+        android:layout_marginTop="8px"
+        android:text="--%"
+        android:textColor="@color/Black"
+        android:textSize="24px" />
+
+
+    <TextView
+        android:id="@+id/pe_ratio_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/turnover_rate"
+        android:layout_below="@id/today_open"
+        android:layout_marginTop="40px"
+        android:text="外盘"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/pe_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pe_ratio_label"
+        android:layout_below="@id/pe_ratio_label"
+        android:layout_marginTop="8px"
+        android:text="--"
+        android:textColor="@color/Black"
+        android:textSize="24px" />
+
+
+</merge>

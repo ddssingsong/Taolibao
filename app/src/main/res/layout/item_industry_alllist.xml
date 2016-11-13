@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="@drawable/selecter_press"
+    android:layout_height="116px">
+
+    <TextView
+        android:id="@+id/tv_industry_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:text="食品饮料"
+        android:textColor="@color/Black"
+        android:textSize="30px" />
+
+
+    <TextView
+        android:id="@+id/tv_industry_top_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="30px"
+        android:text="花园生物"
+        android:textColor="@color/Gunpowder"
+        android:textSize="28px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_industry_up_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="400px"
+        android:clickable="true"
+        android:text="+1.78%"
+        android:textColor="@color/Red"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30px"
+        android:background="@color/Smokey" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_lay"></include>
+
+    <include
+        layout="@layout/menu_devide_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px">
+
+    </include>
+
+    <com.jhs.taolibao.code.simtrade.view.CategoryTabStrip
+        android:id="@+id/short_category_strip"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:layout_width="wrap_content"
+        android:layout_height="96px"
+        android:layout_gravity="left"
+        android:background="@color/White"
+        android:clipToPadding="false">
+
+    </com.jhs.taolibao.code.simtrade.view.CategoryTabStrip>
+
+    <include layout="@layout/menu_devide_doubleline"></include>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/short_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

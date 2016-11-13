@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="text_title">36px</dimen>
+    <dimen name="text_content">30px</dimen>
+    <dimen name="text_content_sec">28px</dimen>
+
+    <!-- 模拟炒股查询界面字体大小 -->
+    <dimen name="textsize_select">30px</dimen>
+    <dimen name="padding_left">30px</dimen>
+    <dimen name="padding_right">30px</dimen>
+
+
+    <!-- 正在加载文本上边距 -->
+    <dimen name="picture_loading_text_top_margin">12dp</dimen>
+    <!-- 下拉刷新字体 -->
+    <dimen name="picture_pull_to_refresh_loading_text_size">14dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">10dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">6dp</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">40dp</dimen>
+</resources>

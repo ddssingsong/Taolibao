@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/videoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/nonVideoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jhs.taolibao.view.VideoEnabledWebView
+                android:id="@+id/news_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hardwareAccelerated="true"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/txt_news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/news_webview"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:gravity="center_horizontal"
+                android:textColor="@color/Black"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/txt_news_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/txt_news_title"
+                android:layout_below="@id/txt_news_title"
+                android:layout_marginTop="30px"
+                android:singleLine="true"
+                android:text="2小时前"
+                android:textColor="@color/Aluminum"
+                android:textSize="24px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_news_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_news_title"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="30px"
+                android:layout_toRightOf="@id/txt_news_date"
+                android:singleLine="true"
+                android:text="100评论"
+                android:textColor="@color/Aluminum"
+                android:textSize="24px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/label_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/nonVideoLayout"
+            android:layout_marginBottom="8px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:text="精彩评论"
+            android:textColor="@color/Black"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/label_detail_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/nonVideoLayout"
+            android:layout_marginBottom="12px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:text="条评论"
+            android:textColor="@color/Black"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_news_detail_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nonVideoLayout"
+            android:layout_marginBottom="12px"
+            android:layout_marginTop="30px"
+            android:layout_toLeftOf="@id/label_detail_comment"
+            android:text="100"
+            android:textColor="@color/Red"
+            android:textSize="30px" />
+
+        <View
+            android:id="@+id/divider_news_detail"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/label_comment"
+            android:layout_marginLeft="30px"
+            android:background="@color/Smokey" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="4px"
+            android:layout_above="@id/divider_news_detail"
+            android:layout_alignLeft="@id/label_comment"
+            android:layout_alignRight="@id/label_comment"
+            android:background="@color/Red" />
+    </RelativeLayout>
+</FrameLayout>

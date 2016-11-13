@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44px">
+
+        <TextView
+            android:id="@+id/tv_buy_sell_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="卖1"
+            android:textSize="24px"
+            android:textColor="@color/Velvet"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_buy_sell_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="--"
+            android:textSize="24px"
+            android:textColor="@color/Olive"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_buy_sell_total_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="--"
+            android:textSize="24px"
+            android:textColor="@color/Velvet"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

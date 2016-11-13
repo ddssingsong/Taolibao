@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_item_aream"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_weight="1"
+        android:background="@drawable/challenge_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/check_identity0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5px"
+                android:background="@drawable/rectangle_red_bg"
+                android:padding="3px"
+                android:text="擂主"
+                android:textColor="@color/Red"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/check_name0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3px"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/check_icon0"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24px"
+            android:src="@drawable/img_default_avatar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28px">
+
+            <LinearLayout
+                android:id="@+id/ll_guanfang_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计收益率"
+                    android:textColor="@color/Velvet"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/tv_cumulativeReturns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16px"
+                    android:text="0%"
+                    android:textColor="@color/Black"
+                    android:textSize="36px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_leizhu_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32px"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="守擂"
+                        android:textColor="@color/Velvet"
+                        android:textSize="24px" />
+
+                    <View
+                        android:layout_width="20px"
+                        android:layout_height="16px"></View>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/check_time0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/Black"
+                            android:textSize="36px" />
+
+                        <View
+                            android:layout_width="15px"
+                            android:layout_height="15px"></View>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="次"
+                            android:textColor="@color/Velvet"
+                            android:textSize="24px" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="68px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/Smokey"></View>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="胜率"
+                        android:textColor="@color/Velvet"
+                        android:textSize="24px" />
+
+                    <View
+                        android:layout_width="20px"
+                        android:layout_height="16px"></View>
+
+                    <TextView
+                        android:id="@+id/check_success0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:0"
+                        android:textColor="@color/Black"
+                        android:textSize="36px" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/check_btn0"
+            android:layout_width="240px"
+            android:layout_height="64px"
+            android:layout_gravity="center"
+            android:layout_marginTop="24px"
+            android:background="@drawable/rectangle_red_bg"
+            android:text="观战/挑战"
+            android:textColor="@color/Red"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/check_game0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16px"
+            android:textColor="@color/Velvet"
+            android:textSize="24px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24px"></View>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20px"
+        android:layout_height="match_parent"></View>
+
+
+    <!--第二个-->
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30px"
+        android:layout_weight="1"
+        android:background="@drawable/challenge_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/check_identity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5px"
+                android:background="@drawable/rectangle_red_bg"
+                android:padding="3px"
+                android:text="擂主"
+                android:textColor="@color/Red"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/check_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3px"
+                android:textColor="@color/Black"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/check_icon1"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24px"
+            android:src="@drawable/img_default_avatar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="28px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="守擂"
+                    android:textColor="@color/Velvet"
+                    android:textSize="24px" />
+
+                <View
+                    android:layout_width="20px"
+                    android:layout_height="16px"></View>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/check_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/Black"
+                        android:textSize="36px" />
+
+                    <View
+                        android:layout_width="15px"
+                        android:layout_height="15px"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="次"
+                        android:textColor="@color/Velvet"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="68px"
+                android:layout_gravity="center_vertical"
+                android:background="@color/Smokey"></View>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="胜率"
+                    android:textColor="@color/Velvet"
+                    android:textSize="24px" />
+
+                <View
+                    android:layout_width="20px"
+                    android:layout_height="16px"></View>
+
+                <TextView
+                    android:id="@+id/check_success1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:0"
+                    android:textColor="@color/Black"
+                    android:textSize="36px" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/check_btn1"
+            android:layout_width="240px"
+            android:layout_height="64px"
+            android:layout_gravity="center"
+            android:layout_marginTop="24px"
+            android:background="@drawable/rectangle_red_bg"
+            android:text="观战/挑战"
+            android:textColor="@color/Red"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/check_game1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16px"
+            android:textColor="@color/Velvet"
+            android:textSize="24px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24px"></View>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

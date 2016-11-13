@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="A级基金"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="B级基金"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="母级基金"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="折溢价率"
+            android:textColor="@color/Gunpowder"
+            android:textSize="24px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Smokey" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/list_taoli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+        <include layout="@layout/layout_loading" />
+    </FrameLayout>
+
+</LinearLayout>

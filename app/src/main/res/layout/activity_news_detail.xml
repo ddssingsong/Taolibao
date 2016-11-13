@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.jhs.taolibao.view.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/btn_back"
+        app:titleBarRightImage="@drawable/ic_share"></com.jhs.taolibao.view.TitleBar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/recycle_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+        <include layout="@layout/layout_loading" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="88px">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Smokey" />
+
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:clickable="true"
+            android:src="@drawable/btn_send_comment" />
+
+        <EditText
+            android:id="@+id/tv_click_comment"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_below="@id/divider"
+            android:layout_marginBottom="12px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="12px"
+            android:layout_toLeftOf="@id/iv_send"
+            android:background="@drawable/shape_comment"
+            android:gravity="center_vertical"
+            android:hint="我要评论..."
+            android:paddingLeft="28px"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Aluminum"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Background">
+
+    <TextView
+        android:id="@+id/tv_guess_typename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="20px"
+        android:text="上证指数"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/text_content" />
+
+
+    <TextView
+        android:id="@+id/tv_guess_endpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_guess_typename"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text="2931.59"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/text_title" />
+
+
+    <TextView
+        android:id="@+id/tv_reward_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px"
+        android:text="2910—2990"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/label_jiangliqujian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:layout_toLeftOf="@id/tv_reward_interval"
+        android:text="奖励区间"
+        android:textColor="@color/Gunpowder"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_guess_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/label_jiangliqujian"
+        android:layout_marginRight="30px"
+        android:padding="10px"
+        android:enabled="false"
+        android:layout_marginTop="30px"
+        android:background="@drawable/selecter_label_red_gray"
+        android:text="竞猜失败"
+        android:textColor="@color/Smokey" />
+
+    <TextView
+        android:id="@+id/tv_guess_gamepoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_guess_result"
+        android:layout_marginRight="30px"
+        android:layout_toLeftOf="@id/tv_guess_result"
+        android:text="1000"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/text_content" />
+
+    <TextView
+        android:id="@+id/label_guess_gamepoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_guess_gamepoint"
+        android:layout_marginRight="10px"
+        android:layout_toLeftOf="@id/tv_guess_gamepoint"
+        android:text="竞猜点位"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/text_content" />
+
+</RelativeLayout>

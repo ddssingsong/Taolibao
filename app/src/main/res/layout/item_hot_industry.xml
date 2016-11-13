@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250px"
+    android:layout_height="184px">
+
+    <TextView
+        android:id="@+id/tv_industry_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:text="食品饮料"
+        android:textColor="@color/Black"
+        android:textSize="28px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_industry_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_industry_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:text="+1.78%"
+        android:textColor="@color/Red"
+        android:textSize="24px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_stock_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_industry_ratio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:text="花园生物"
+        android:textColor="@color/Black"
+        android:textSize="24px" />
+
+
+    <TextView
+        android:id="@+id/tv_stock_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_stock_name"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="10px"
+        android:text="24.54"
+        android:textColor="@color/Gunpowder"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/tv_stock_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_stock_name"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@id/tv_stock_price"
+        android:text="24.54"
+        android:textColor="@color/Gunpowder"
+        android:textSize="20px" />
+
+
+</RelativeLayout>
